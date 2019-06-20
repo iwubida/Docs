@@ -1,0 +1,15 @@
+{
+  "name": "Front-end-specification-document",
+  "version": "1.0.0",
+  "description": "iwubida front-end specification document",
+  "main": "index.js",
+  "author": "iwubida",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress": "^1.0.1"
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CSS 书写规范 | 前端技术团队规范</title>
+    <meta name="description" content="此为物必达前端开发团队遵循和约定的开发规范，旨在保持项目代码的整洁、易读、和一致性，更容易被理解和维护。对待规范，要严格遵守；对待风格，要懂得尊重。">
+    
+    
+    <link rel="preload" href="/Docs/assets/css/0.styles.86f3c813.css" as="style"><link rel="preload" href="/Docs/assets/js/app.77065647.js" as="script"><link rel="preload" href="/Docs/assets/js/2.970c938d.js" as="script"><link rel="preload" href="/Docs/assets/js/7.8729a8e9.js" as="script"><link rel="prefetch" href="/Docs/assets/js/10.65e3aef5.js"><link rel="prefetch" href="/Docs/assets/js/11.b7ea0b1a.js"><link rel="prefetch" href="/Docs/assets/js/3.ef9b9872.js"><link rel="prefetch" href="/Docs/assets/js/4.9f1a2182.js"><link rel="prefetch" href="/Docs/assets/js/5.4e086bf7.js"><link rel="prefetch" href="/Docs/assets/js/6.3ba32c14.js"><link rel="prefetch" href="/Docs/assets/js/8.5745b95a.js"><link rel="prefetch" href="/Docs/assets/js/9.9372783c.js">
+    <link rel="stylesheet" href="/Docs/assets/css/0.styles.86f3c813.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Docs/" class="home-link router-link-active"><!----> <span class="site-name">前端技术团队规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Docs/component/" class="nav-link">组件</a></div><div class="nav-item"><a href="/Docs/react/" class="nav-link">React</a></div><div class="nav-item"><a href="/Docs/vue/" class="nav-link">Vue</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">公共规范</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Docs/common/css/" class="nav-link">CSS 书写规范</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Docs/component/" class="nav-link">组件</a></div><div class="nav-item"><a href="/Docs/react/" class="nav-link">React</a></div><div class="nav-item"><a href="/Docs/vue/" class="nav-link">Vue</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">公共规范</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Docs/common/css/" class="nav-link">CSS 书写规范</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>CSS 书写规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Docs/common/css.html#bem-的定义" class="sidebar-link">BEM 的定义</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Docs/common/css.html#块（block）" class="sidebar-link">块（block）</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Docs/common/css.html#元素（element）" class="sidebar-link">元素（element）</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Docs/common/css.html#修饰符（modifier）" class="sidebar-link">修饰符（modifier）</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/Docs/common/css.html#注意事项" class="sidebar-link">注意事项</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css-书写规范"><a href="#css-书写规范" aria-hidden="true" class="header-anchor">#</a> CSS 书写规范</h1> <blockquote><p>本规范根据 BEM 命名规范改造</p></blockquote> <h2 id="bem-的定义"><a href="#bem-的定义" aria-hidden="true" class="header-anchor">#</a> BEM 的定义</h2> <p>BEM 代表块（block）,元素（element）,修饰符（modifier）</p> <p>在选择器中，由以下三种符号来表示扩展的关系：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>驼峰命名：表示某个块或者某个子元素的多单词之间的连接记号
+_ 单下划线：单下划线用来连接块和块的子元素
+__  双下划线：双下划线用来描述一个块或块的子元素的一种状态
+
+typeBlock_element__modifier
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="块（block）"><a href="#块（block）" aria-hidden="true" class="header-anchor">#</a> 块（block）</h2> <p>代码片段可能被复用且这段代码不依赖其他组件即可用 Block。块可以互相嵌套,可以嵌套任意多层。</p> <p>特点：</p> <ul><li><p>块的名称用于描述它的目的。如 menu、button（而不是它的状态，如：red、big）</p></li> <li><p>块不能影响所在环境。这意味着不能为块设置 <strong>margin</strong> 或 <strong>position</strong></p></li> <li><p>只能使用 class 命名选择器，而不能使用标签或 id 选择器</p></li> <li><p>不依赖于页面内其他块或元素</p></li> <li><p>多个单词描述用驼峰命名法</p></li></ul> <p>例如：一个自定义列表 <code>.list</code> 是一个块，通常自定义列表是算在 mod 类别的，在这种情况下，一个 list 列表的 block 写法应该为:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.list
+
+// 多个单词命名
+.myList
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="元素（element）"><a href="#元素（element）" aria-hidden="true" class="header-anchor">#</a> 元素（element）</h2> <ul><li><p>块中的子元素是块的子元素</p></li> <li><p>块的子元素的子元素也被认为是块的直接子元素</p></li> <li><p>一个块中元素的类名必须用父级块的名称作为前缀</p></li></ul> <p>如上面的例子，li.item 是列表的一个子元素</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.list{}
+.list .item{}
+
+
+.list{}
+.list_item{}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="修饰符（modifier）"><a href="#修饰符（modifier）" aria-hidden="true" class="header-anchor">#</a> 修饰符（modifier）</h2> <p>一个“修饰符”可以理解为一个块的特定状态，标识着它持有一个特定的属性。</p> <p>例如一个表示按钮的块默认有三个大小：小，中，大。为了避免创建三个不同的块，最好是在块上加修饰符。这个修饰符应该有个名字（比如：size ）和值（ small，normal 或者 big ）。</p> <p>如上面的例子中，表示一个选中的列表，和一个激活的列表项</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>.list{}
+.list.select{}
+.list .item{}
+.list .item.active{}
+
+
+.list{}
+.list_select{}
+.list_item{}
+.list_item__active{}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="注意事项"><a href="#注意事项" aria-hidden="true" class="header-anchor">#</a> 注意事项</h2> <ol><li><p>最小化选择器的嵌套(建议不超过 2 级)，出现嵌套多层的情况就是组件设计问题，应该考虑拆分</p></li> <li><p>不要使用 id 选择器或 tag 选择器</p></li> <li><p>一个块不要有副作用，对外部造成影响（影响外部的属性：<code>margin</code>和<code>position</code>等）</p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/Docs/assets/js/app.77065647.js" defer></script><script src="/Docs/assets/js/2.970c938d.js" defer></script><script src="/Docs/assets/js/7.8729a8e9.js" defer></script>
+  </body>
+</html>
